@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/index.css" />
+  </head>
+  <body>
+    <section class="header">Duplicate Detection Tool</section>
+    <section class="main">
+      <section id="step1" class="step">
+        <h4 class="title">Step 1</h4>
+        <p class="instruction">Please upload a CSV file.</p>
+        <form>
+          <input type="file" id="fileInput" />
+          <button type="button" id="uploadButton">Upload</button>
+        </form>
+        <p id="selectedFileLabel"></p>
+      </section>
+      <section id="step2" class="step">
+        <h4 class="title">Step 2</h4>
+        <p class="instruction">Choose a model to start detecting duplicates.</p>
+        <div class="btn-group">
+          <button class="detect btn btn-left" id="gpt-start">ChatGPT</button>
+          <button class="detect btn btn-right" id="lev-start">
+            Levenshtein
+          </button>
+        </div>
+      </section>
+      <section id="step3" class="step">
+        <h4 class="title">Step 3</h4>
+        <p class="instruction">Download the filtered CSV file.</p>
+        <button class="download btn" id="download">Download</button>
+      </section>
+    </section>
+    <script src="/static/index.js"></script>
+  </body>
+</html>
