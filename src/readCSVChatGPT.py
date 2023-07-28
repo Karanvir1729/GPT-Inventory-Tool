@@ -3,7 +3,7 @@ import pandas as pd
 import openai
 import os
 
-openai.api_key = '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'
+openai.api_key = 'OPEN-AI-KEY'
 
 def read_csv_file(str):
     data = {}
